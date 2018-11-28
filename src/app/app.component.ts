@@ -2,8 +2,13 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  template: `
+    <mat-toolbar color="primary">
+      <a mat-button routerLink="/home"><h1>owezzy-humanitec</h1>
+      </a>
+  </mat-toolbar>
+  <router-outlet></router-outlet>
+  `
 })
 export class AppComponent {
   title = 'humantic-code-assignment';
